@@ -1,0 +1,61 @@
+.navbar {
+    background-color: white;
+
+    a {
+        color: black;
+    }
+}
+
+.home {
+    background-color: black;
+    background: url("../css/img/img.jpg") no-repeat;
+    height: 758px;
+}
+
+.about {
+    background-color: #00c4c4;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.ourservice {
+
+    background-color: #70bfff;
+    .container {
+        background: url("../css/img/img3.png") no-repeat right;
+
+        .min {
+            min-height: 790px;
+        }
+        H2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.gallery{
+    background-color: #ffe92f;
+}
+.subscribe{
+    min-height: 500px;
+    background: url("../css/img/img4.jpg") no-repeat;
+    background-size: 100% 100%;
+
+}
+.blog {
+    background-color: #b07cf7;    
+}
+.form{ 
+    background: url("../css/img/img5.jpg") no-repeat fixed;
+    background-size: cover;
+}
+footer{
+    background-color: #262626; 
+    color: white;
+    padding: 1rem;
+}
