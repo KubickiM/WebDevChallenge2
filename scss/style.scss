@@ -9,7 +9,8 @@
 .home {
     background-color: black;
     background: url("../css/img/img.jpg") no-repeat;
-    height: 758px;
+    background-size: cover;
+    height: 100vh;
 }
 
 .about {
@@ -58,4 +59,10 @@ footer{
     background-color: #262626; 
     color: white;
     padding: 1rem;
+}
+.list-group-item{
+    border: none;
+    background: none;
+    height: auto;    
+    padding: 0;
 }
