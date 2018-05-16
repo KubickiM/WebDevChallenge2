@@ -22,7 +22,7 @@ section {
 }
 
 .ourservice {
-
+    
     background-color: #70bfff;
     .container {
         background: url("../css/img/img3.png") no-repeat right;
@@ -30,12 +30,7 @@ section {
         .min {
             min-height: 790px;
         }
-        H2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%);
-        }
+        text-align: center;
     }
 }
 
