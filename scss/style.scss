@@ -22,7 +22,7 @@ section {
 }
 
 .ourservice {
-    
+
     background-color: #70bfff;
     .container {
         background: url("../css/img/img3.png") no-repeat 90%;
@@ -30,7 +30,7 @@ section {
         .min {
             min-height: 790px;
         }
-       
+
     }
 }
 
@@ -42,8 +42,16 @@ section {
     min-height: 500px;
     background: url("../css/img/img4.jpg") no-repeat;
     background-size: 100% 100%;
-
+    .form-control-sub {
+    padding: 5px;
+        border: 1px solid black;
+        &::placeholder{
+            padding: 5px;
+        }
 }
+}
+
+
 
 .blog {
     background-color: #b07cf7;
@@ -96,8 +104,8 @@ textarea {
     height: 200px;
 }
 
-.gallery{
-    img{
+.gallery {
+    img {
         margin: 33px 0 0 0;
     }
 }
