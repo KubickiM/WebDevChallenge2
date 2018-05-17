@@ -51,7 +51,23 @@ section {
 }
 }
 
+.card{
+    height: 310px;
+    width: 100%;
+}
 
+.card-img1{
+        background: url("../css/img/blog1.jpg") no-repeat center;
+        background-size: auto;
+}
+.card-img2{
+        background: url("../css/img/blog2.jpg") no-repeat 75% 95%;
+        background-size: auto;
+}
+.card-img3{
+        background: url("../css/img/blog3.jpg") no-repeat center;
+        background-size: auto;
+}
 
 .blog {
     background-color: #b07cf7;
