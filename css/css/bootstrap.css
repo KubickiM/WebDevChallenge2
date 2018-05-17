@@ -3841,7 +3841,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0rem 0rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -4128,7 +4128,7 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav  {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
   }
