@@ -34,16 +34,17 @@
 
 
 .ourservice {
-
     background-color: #70bfff;
-    .container {
-        background: url("../css/img/img3.png") no-repeat 90%;
-
+    .our {
+        background: url("../css/img/img3.png") no-repeat 35%;
+        background-size: contain;
+    }
         .min {
             min-height: 790px;
+            
         }
 
-    }
+    
 }
 
 .gallery {

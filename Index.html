@@ -52,7 +52,7 @@
             <div class="row h-100 align-items-center">
                 <div class="col-sm-12 col-lg-7">
 
-                    <img class="img-fluid aboutimg" src="css/img/img2.png">
+                    <img class="img-fluid leftSR" src="css/img/img2.png">
 
                 </div>
                 <div class="col-sm-12 col-lg-5">
@@ -69,7 +69,7 @@
     <section id="ourservice" class="ourservice">
         <div class="container p-4 h-100 ">
             <div class="row p-2 h-100 min flex-row-reverse">
-                               <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center">
+                               <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-center our min rightSR">
                     <h2>Our Services</h2>
                 </div>
                 <div class="col-sm-12 col-md-6 text-center d-flex align-items-center">
@@ -95,12 +95,12 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-8 text-center ">
 
-                        <img src="css/img/gal1.jpg" class="img-fluid">
+                        <img src="css/img/gal1.jpg" class="img-fluid leftSR">
 
 
 
                     </div>
-                    <div class="col-sm-12 col-lg-4 text-center">
+                    <div class="col-sm-12 col-lg-4 text-center rightSR">
 
                         <img src="css/img/gal2.jpg" class="img-fluid">
 
@@ -111,14 +111,14 @@
                 <div class="row">
                     <div class="col-sm-12 col-lg-6 text-center ">
 
-                        <img src="css/img/gal4.jpg" class="img-fluid">
+                        <img src="css/img/gal4.jpg" class="img-fluid leftSR">
 
 
 
                     </div>
                     <div class="col-sm-12 col-lg-6 text-center">
 
-                        <img src="css/img/gal5.jpg" class="img-fluid">
+                        <img src="css/img/gal5.jpg" class="img-fluid rightSR">
 
                     </div>
                 </div>
@@ -127,7 +127,7 @@
         </div>
     </section>
 
-    <section id="subscribe" class="subscribe d-flex align-items-center">
+    <section id="subscribe" class="subscribe d-flex align-items-center rightSR">
         <div class="container p-4 ">
             <div class="row p-2">
                 <div class="col-sm-12 col-md-6 ">
@@ -155,7 +155,7 @@
                     <h2 class="p-2">Blog To Us</h2>
                     <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 </div>
-                <div class="card-deck col-sm-12 col-lg-12 d-flex justify-content-between mx-auto">
+                <div class="card-deck col-sm-12 col-lg-12 d-flex justify-content-between mx-auto leftSR">
                     <div class="card card-img1">
                 
                         <div class="card-img-overlay">
@@ -198,7 +198,7 @@
         <div class="container p-4 ">
 
             <div class="row h-100 flex-column align-items-center">
-                <div class="col-sm-12 col-md-6 col-lg-4 text-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 text-center ">
                     <h1>Contact</h1>
                     <p>For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
                    
@@ -206,7 +206,7 @@
             </div>
             <div class="row p-4">
                 <div class="col-sm-12 col-md-6">
-                    <form>
+                    <form class="leftSR">
                         <div class="form-group">
 
                             <input type="text" class="form-control" id="exampleInputEmail1" placeholder="enter your name">
@@ -227,7 +227,7 @@
                     </form>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <ul class="list-group">
+                    <ul class="list-group rightSR">
                         <li class="list-group-item"><strong>Adress</strong>
                             <p class="w-100">123 City name, Street, City, Country</p>
                         </li>
@@ -272,7 +272,14 @@
     
     <script src="js/scrollreveal.min.js"></script>
     
-
+    <script>
+    
+    window.sr = ScrollReveal({ reset: false });
+    sr.reveal('.navbar', { duration: 2000, origin: 'top',opacity: 0, scale: 1, mobile: false });
+    sr.reveal('.leftSR', { duration: 2000, delay: 200, origin: 'left',distance: '300px',mobile: false }); 
+        sr.reveal('.rightSR', { duration: 2000, origin: 'right',distance: '300px', delay: 200,mobile: false });
+    
+    </script>
 
 </body>
 
