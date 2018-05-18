@@ -129,6 +129,10 @@ footer {
 
 }
 
+.love{
+    color:red;
+}
+
 textarea {
     height: 200px;
 }
@@ -139,3 +143,12 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 600px){
+    .subscribe {
+        background-position: 65%;
+        background-size: initial;
+    }
+    .text-left, .text-right{
+        text-align: center !important;
+    }
+}
