@@ -1,7 +1,5 @@
 .navbar {
     background-color: white;
-
-    a {}
 }
 
 .navbar-brand {
@@ -30,19 +28,20 @@
 
 .mouse {
     position: absolute;
-    left:50%;
+    left: 50%;
     bottom: 30px;
     animation: mouse 2s infinite;
 }
 
 @keyframes mouse {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-  
-  50% {
-    transform: translate(0, -50px);
-  }
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -50px);
+    }
 }
 
 .Cahee {
@@ -104,6 +103,16 @@ h2 {
             box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
         }
     }
+}
+
+@keyframes iconani {
+    0% {transform: translate(40px,0);}
+    
+100% {
+    transform: translate(0,0);
+    opacity: 1;
+    
+}
 }
 
 .iconserv {
@@ -238,6 +247,23 @@ textarea {
     }
 }
 
+@media only screen and (min-width: 960px) {
+    .ourservice{
+        li{
+                           div:nth-child(2) {
+                  opacity: 0;  
+                
+                }
+            
+            &:hover {
+                div:nth-child(2) {
+                    animation: iconani 2s 1;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .subscribe {
