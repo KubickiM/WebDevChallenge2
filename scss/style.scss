@@ -1,26 +1,27 @@
 .navbar {
     background-color: white;
 
-    a {
-        
-    }
+    a {}
 }
-.nav-item{
+
+.nav-item {
     margin: 0px 0.5rem 0px 0.5rem;
 }
+
 .nav-link {
-    padding-right: 0px; 
-    padding-left: 0px; 
-    &:hover{
-            border-top: 2px solid orange;
-    margin-top: -2px;
+    padding-right: 0px;
+    padding-left: 0px;
+    &:hover {
+        border-top: 2px solid orange;
+        margin-top: -2px;
     }
 }
 
-.nav-link.active{
+.nav-link.active {
     border-top: 2px solid orange;
     margin-top: -2px;
 }
+
 .home {
     background-color: black;
     background: url("../css/img/img.jpg") no-repeat;
@@ -39,12 +40,35 @@
         background: url("../css/img/img3.png") no-repeat 35%;
         background-size: contain;
     }
-        .min {
-            min-height: 790px;
-            
-        }
+    .min {
+        min-height: 690px;
 
-    
+    }
+    ul {
+        width: 80%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 0px;
+        list-style: none;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            height: 100px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        }
+    }
+}
+
+.iconserv {
+    min-height: 100%;
+    border-left: 1px solid gray;
 }
 
 .gallery {
@@ -56,30 +80,32 @@
     background: url("../css/img/img4.jpg") no-repeat;
     background-size: 100% 100%;
     .form-control-sub {
-    padding: 5px;
+        padding: 5px;
         border: 1px solid black;
-        &::placeholder{
+        &::placeholder {
             padding: 5px;
         }
-}
+    }
 }
 
-.card{
+.card {
     height: 310px;
     width: 100%;
 }
 
-.card-img1{
-        background: url("../css/img/blog1.jpg") no-repeat center;
-        background-size: auto;
+.card-img1 {
+    background: url("../css/img/blog1.jpg") no-repeat center;
+    background-size: auto;
 }
-.card-img2{
-        background: url("../css/img/blog2.jpg") no-repeat 75% 95%;
-        background-size: auto;
+
+.card-img2 {
+    background: url("../css/img/blog2.jpg") no-repeat 75% 95%;
+    background-size: auto;
 }
-.card-img3{
-        background: url("../css/img/blog3.jpg") no-repeat center;
-        background-size: auto;
+
+.card-img3 {
+    background: url("../css/img/blog3.jpg") no-repeat center;
+    background-size: auto;
 }
 
 .blog {
@@ -129,8 +155,8 @@ footer {
 
 }
 
-.love{
-    color:red;
+.love {
+    color: red;
 }
 
 textarea {
@@ -143,12 +169,33 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
     .subscribe {
         background-position: 65%;
         background-size: initial;
     }
-    .text-left, .text-right{
+    .text-left,
+    .text-right {
         text-align: center !important;
     }
+    .iconserv {
+        width: 35%;
+    }
+
+
+.ourservice {
+    .min {
+        min-height: 450px;
+    }
+    ul {
+        width: 100%;
+
+        li {
+            width: 100%;
+            height: 80px;
+
+        }
+    }
+}
 }
