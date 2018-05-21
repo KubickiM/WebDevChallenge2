@@ -106,13 +106,15 @@ h2 {
 }
 
 @keyframes iconani {
-    0% {transform: translate(40px,0);}
-    
-100% {
-    transform: translate(0,0);
-    opacity: 1;
-    
-}
+    0% {
+        transform: translate(40px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+
+    }
 }
 
 .iconserv {
@@ -185,6 +187,14 @@ h2 {
     background-size: auto;
 }
 
+.card {
+    transition: 1s;
+    &:hover {
+        filter: opacity(50%);
+        transition: 1s;
+    }
+}
+
 .blog {
     background-color: #b07cf7;
 }
@@ -242,19 +252,31 @@ textarea {
 }
 
 .gallery {
-    img {
+
+    .bg {
         margin: 33px 0 0 0;
+        background-color: black;
+        overflow: hidden;
+    }
+
+    img {
+        transition: 1s;
+        &:hover {
+            filter: opacity(50%);
+            transition: 1s;
+            transform: scale(1.1);
+        }
     }
 }
 
 @media only screen and (min-width: 960px) {
-    .ourservice{
-        li{
-                           div:nth-child(2) {
-                  opacity: 0;  
-                
-                }
-            
+    .ourservice {
+        li {
+            div:nth-child(2) {
+                opacity: 0;
+
+            }
+
             &:hover {
                 div:nth-child(2) {
                     animation: iconani 2s 1;
